@@ -1,0 +1,1 @@
+var pyc_json = {"co_consts": [8, "hello", null], "instr_offset_map": {"0": 0, "3": 1, "6": 2, "9": 3, "12": 4, "15": 5, "16": 6, "17": 7, "20": 8}, "co_code": [[0, "LOAD_CONST", 0], [3, "LOAD_CONST", 1], [6, "BUILD_LIST", 2], [9, "STORE_NAME", 0], [12, "LOAD_NAME", 0], [15, "PRINT_ITEM"], [16, "PRINT_NEWLINE"], [17, "LOAD_CONST", 2], [20, "RETURN_VALUE"]], "co_names": ["lst"]}

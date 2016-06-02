@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+
+
+
+
+<script type="text/javascript" src="./pyc_json.js"></script>
+
+
+<script type="text/javascript" src="./PycMachine.js"></script>
+
+
+
+<script type="text/javascript">
+
+
+/*
+
+python code:
+
+a = 8
+b = 10
+c = a+b
+print c
+
+*/
+
+function Console(canvas_id) {
+    this.element = document.getElementById(canvas_id);
+    if (!this.element)
+        throw('Console element not found.');
+
+    this.print('>>>');
+}
+Console.prototype.print = function(val) {
+    if(!this.element) return;
+    val += ' ';
+    this.element.appendChild(document.createTextNode(val));
+};
+
+Console.prototype.println = function println (val) {
+	if(!val) val = '';
+    this.print(val);
+    this.element.appendChild(document.createElement('br')); 
+    this.print('>>>');   
+};
+
+
+
+ 
+
+function tt(e){
+var m = new PycMachine(pyc_json);
+
+m.run();
+
+
+ 
+
+ 
+};
+
+</script>
+
+ </head>
+
+ <body>
+
+ <button onclick="tt(this)" >ok </button>
+
+
+ <div id="canvas_console" width="800" height="600" style="background-color:black;color:white"> </div>
+
+ <script type="text/javascript">
+
+ my_Console = new Console('canvas_console');
+ 
+
+my_Console.println('hello world');
+
+my_Console.println('88888');
+
+
+
+ </script>
+  
+ </body>
+</html>
